@@ -1,14 +1,11 @@
-$primarycolor: #666;
-$primarybgcolor: #e2e2e2;
-$secondarycolor: #fff;
-$secondarybgcolor: #f2f2f2;
-$bordercolor: #ccc;
-$primaryfont: 'Open Sans', sans-serif;
-.navbar-brand { padding: 0;}
-.navbar { padding: 0 15px; font-family: $primaryfont; font-weight: 700; color: $primarycolor;  .navbar-nav a {padding: 38px 15px !important;}}
-.navbar-nav>li>a:focus,
-.navbar-nav>li>a:hover { color: #666 !important; background-color: #f2f2f2;}
-.navbar-nav>.active>a ,.navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover { color: #666 !important; background-color: #f2f2f2; }
-.banner { padding: 0;}
-.donec { color: $secondarycolor; background: $primarycolor; font-size: 30px; padding: 20px 280px; font-weight: 700;}
-.retina { padding: 40px 15px;font-family: $primaryfont; color: $primarycolor; .col-xl-4 {display: flex; justify-content: space-around; flex-direction: column;padding:40px 15px;height: 200px;  background: $primarybgcolor; border-right: 1px solid $secondarycolor; border-top: solid 1px $bordercolor; border-bottom:solid 1px $bordercolor ; i { font-size: 22px;} h4 {font-weight: 600;} p {font-size: 13px; margin: 0;}} .col-xl-4:last-child { border-right: none;}}
+@import "variables";
+@import "navbar";
+@import "banner";
+@import "donec";
+@import "retina";
+@import "services";
+@mixin defualt-items (){ color: #666666;background-color: #f2f2f2; font-family: 'Open Sans', sans-serif;}
+.our-services-wrapper { @include defualt-items(); border-top: 10px #ccc solid;}
+.right-side-image img { margin: 0 0 0 auto; display: block;}
+
+

@@ -1,0 +1,5 @@
+.navbar-brand { padding: 0;}
+.navbar { padding: 0 15px; font-family: $primaryfont; font-weight: 700; color: $primarycolor;  .navbar-nav a {padding: 38px 15px !important;}}
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover { color: #666 !important; background-color: #f2f2f2;}
+.navbar-nav>.active>a ,.navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover { color: #666 !important; background-color: #f2f2f2; }
